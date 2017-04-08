@@ -1,0 +1,4 @@
+.idea/
+src/**/*.css
+node_modules/
+yarn.lock

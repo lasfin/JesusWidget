@@ -1,0 +1,32 @@
+.CurrencySlider {
+    .title {
+        font-size: 13px;
+        color: #333;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .dots-wrap {
+        text-align: center;
+    }
+    .dots {
+        margin: 0.5em auto;
+        display: inline-block;
+    }
+    .slider-dot {
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        margin: 0 .5em;
+        border-radius: 50%;
+        background: rgba(14, 44, 255, 0.66);
+        &:hover {
+            cursor: pointer;
+        }
+        &.active {
+            background: rgba(14, 44, 255, 1);
+            &:hover {
+                cursor: default;
+            }
+        }
+    }
+}

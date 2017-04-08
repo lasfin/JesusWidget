@@ -1,0 +1,31 @@
+.ControlButtons {
+    text-align: center;
+    .btn {
+        display: inline-block;
+        font-size: 12px;
+        width: 6em;
+        height: 6em;
+        margin: 1em 0.5em;
+        border-radius: 50%;
+        border: none;
+        color: #444;
+        text-align: center;
+        line-height: 1em;
+        background-color: #fff;
+        &:hover {
+            cursor: pointer;
+        }
+        &.-disabled {
+            color: #ccc;
+            border: 1px solid #eee;
+            &:hover {
+                cursor: auto;
+            }
+        }
+        &:focus {
+            position: relative;
+            top: 1px;
+            left: 1px;
+        }
+    }
+}

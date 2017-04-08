@@ -1,0 +1,29 @@
+.ExchangeHistory {
+    border-top: 1px solid #fff;
+    .list {
+        padding: 0.5em;
+        li {
+            list-style: none;
+            font-size: 13px;
+            clear: both;
+            margin: 1em 0;
+        }
+    }
+    .label {
+        width: 50px;
+        text-align: center;
+        padding: 3px 7px;
+        font-size: 12px;
+        display: inline-block;
+        border-radius: 4px;
+        float: right;
+        &.-success {
+            background-color: #4fae33;
+            color: #fff;
+        }
+        &.-failed {
+            background-color: #ed2d2d;
+            color: #fff;
+        }
+    }
+}
