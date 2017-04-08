@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import _ from 'lodash';
+import find from 'lodash/find';
 import './ExchangeHistory.css';
 
 class ExchangeHistory extends Component {
@@ -13,7 +13,7 @@ class ExchangeHistory extends Component {
     }
 
     extentHistory(event, availableCurrencies) {
-        let currency = _.find(availableCurrencies, {abbreviation: event.currency});
+        let currency = find(availableCurrencies, {abbreviation: event.currency});
         return Object.assign(event, { full: currency.full, abbreviation: currency.abbreviation });
     }
 

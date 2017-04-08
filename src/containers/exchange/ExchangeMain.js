@@ -33,21 +33,21 @@ class ExchangeMain extends Component {
                 { this.state.activeTab === this.state.tabs[0] ?
                     <div>
                         <Balance
-                            activeCurrency={this.props.activeCurrency}
-                            money={this.props.money}
+                            activeCurrency={ this.props.activeCurrency }
+                            money={ this.props.money }
                         />
                         <CurrencySlider
-                            currency={this.props.activeCurrency}
-                            availableCurrencies={this.props.availableCurrencies}
-                            onDotClick={this.props.changeActiveCurrency}
-                            showTitle={true}
+                            currency={ this.props.activeCurrency }
+                            availableCurrencies={ this.props.availableCurrencies }
+                            onDotClick={ this.props.changeActiveCurrency }
+                            showTitle={ true }
                         />
                         <ControlButtons
                             onExchangeClick={ () => { this.changeTab(this.state.tabs[1]) } }
                         />
                         <ExchangeHistory
-                            history={this.props.history}
-                            availableCurrencies={this.props.availableCurrencies}
+                            history={ this.props.history }
+                            availableCurrencies={ this.props.availableCurrencies }
                         />
                     </div>
                     :

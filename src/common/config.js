@@ -1,11 +1,4 @@
 export default {
-
-    texts: {
-        overLimit: 'Amount of money that you want to exchange is bigger than you have on account',
-        failedTransactionText: 'Sorry, this\'s just UI.',
-        successTransactionText: 'Unbelievable!'
-    },
-
     api: {
         latest: 'https://openexchangerates.org/api/latest.json?app_id=' // https://docs.openexchangerates.org/docs/latest-json
     },
